@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio frontend developera specjalizującego się w HTML, CSS, JavaScript i React. Zobacz moje projekty i skontaktuj się ze mną.">
+    <meta name="keywords"
+        content="frontend developer, projekty webowe, HTML, CSS, JavaScript, React, responsywne strony">
+    <title>Portfolio Frontend Developera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/79e695bdc5.js" crossorigin="anonymous"></script>
+    <!-- kit font awesome -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Nav Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top" id="navbar">
+        <!-- Główne opakowanie nawigacji -->
+        <div class="container">
+            <!-- Logo z odnośnikiem do strony głównej -->
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-camera2 orange-color"></i> Moje portfolio
+            </a>
+            
+            <!-- Przycisk toggle dla widoku mobilnego -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Przełącz nawigację">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Elementy nawigacyjne -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <!-- Linki do sekcji -->
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a> <!-- Dodano aria-current dla oznaczenia bieżącej strony -->
+                    <a class="nav-link" href="#aboutus">O mnie</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a> <!-- Zmieniono id na "portfolio", aby było bardziej intuicyjne -->
+                    <a class="nav-link" href="#skills">Umiejętności</a> <!-- Poprawiono literówkę w "Umiejetności" -->
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Nav end -->
+
+    <!-- Header Start -->
+    <div class="top-header" id="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="./img/img6.jpg" alt="zdjecie grzegorz siemiatycki" class="profile-image" />
+                </div>
+    
+                <div class="col-md-8">
+                    <h1>GRZEGORZ SIEMIATYCKI</h1>
+                    <p>Web Designer, Web Developer, Front End Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header End -->
+
+    <!-- About Me Start-->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="./img/img6.jpg" alt="zdjecie grzegorz siemiatycki" />
+                </div>
+
+                <div class="col-md-6 col-lg-8">
+                    <header class="section-header">
+                        <h2>O mnie</h2>
+                    </header>
+                    <h3><strong>Imię i Nazwisko</strong> Grzegorz Siemiatycki</h3>
+                    <h4><strong>Profession:</strong> Web Designer & Developer</h4>
+                    <p>
+                        Aliquam volutpat libero vitae tellus tristique lacinia. Donec convallis eros quis purus
+                        fringilla feugiat. Morbi blandit sapien vestibulum. Donec maximus ligula a ultrices placerat.
+                    </p>
+                    <p>
+                        Mauris ac odio vel tortor facilisis scelerisque. Donec mattis interdum erat, at scelerisque
+                        augue mattis at. Integer nec scelerisque nisl. Duis urna justo, placerat bibendum mattis nec,
+                        venenatis ac nisl.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque neque auctor nisl
+                        ornare, id gravida mi elementum. Pellentesque convallis auctor efficitur. Pellentesque turpis
+                        turpis, placerat eu tempor id, fermentum eu magna.
+                    </p>
+                    <a href="#">Hire Me</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills">
+                        <h3>Front End Skills</h3>
+                        <div class="skill-name">
+                            <p>HTML</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="skill-name">
+                            <p>CSS</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="skill-name">
+                            <p>jQuery</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skills">
+                        <h3>Back End Skills</h3>
+                        <div class="skill-name">
+                            <p>PHP</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="skill-name">
+                            <p>Laravel</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="skill-name">
+                            <p>MySQL</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Me End-->
+
+    <!-- Services Start -->
+    <div class="services" id="services">
+        <div class="container">
+            <header class="section-header">
+                <h3>My Services</h3>
+                <p>
+                    Morbi lacinia malesuada risus vel pellentesque. Cras malesuada, felis nec dignissim lobortis, nisl
+                    nulla venenatis arcu, et commodo lacus nulla sit amet libero.
+                </p>
+            </header>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"><i class="fa fa-television"></i></div>
+                        <h4><a href="#">Web Design</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"> <i class="fa fa-laptop"></i> </div>
+                        <h4><a href="#">Web Development</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"> <i class="fa fa-android"></i> </div>
+                        <h4><a href="#">Apps Development</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"> <i class="fa fa-envelope-o"></i> </div>
+                        <h4><a href="#">Email List Building</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"> <i class="fa fa-signal"></i> </div>
+                        <h4><a href="#">Custom Analytics</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single-service">
+                        <span></span>
+                        <div class="service-icon"> <i class="fa fa-globe"></i> </div>
+                        <h4><a href="#">Online Marketing</a></h4>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et cubilia Curae</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Portfolio Start -->
+
+    <div class="wrapper">
+        <h2 class="section-heading">Polecane Wyspy</h2>
+
+        <div class="islands__cards">
+
+
+            <div class="islands__card" onclick="void(0)">
+                <div class="islands__card-img islands__card-img--first">
+                    <h3 class="islands__card-img-title">Wyspa Tiki Taki</h3>
+                    <p class="islands__card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej
+                        informacji</p>
+                </div>
+                <div class="islands__card-info">
+                    <h3 class="islands__card-info-title">Wyspa Tiki Taki</h3>
+                    <ul class="islands__card-info-list">
+                        <li class="islands__card-info-list-item">Piękna okolica</li>
+                        <li class="islands__card-info-list-item">Ciepła woda</li>
+                        <li class="islands__card-info-list-item">Czyste plaże</li>
+                        <li class="islands__card-info-list-item">Ekskluzywny bar</li>
+                        <li class="islands__card-info-list-item">Wysokie palmy</li>
+                    </ul>
+                    <button class="islands__card-info-btn btn-special-animation">Wybierz</button>
+                </div>
+            </div>
+            <div class="islands__card" onclick="void(0)">
+                <div class="islands__card-img islands__card-img--second">
+                    <h3 class="islands__card-img-title">Wyspa Toca Toca</h3>
+                    <p class="islands__card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej
+                        informacji</p>
+                </div>
+                <div class="islands__card-info">
+                    <h3 class="islands__card-info-title">Wyspa Toca Toca</h3>
+                    <ul class="islands__card-info-list">
+                        <li class="islands__card-info-list-item">Piękna okolica</li>
+                        <li class="islands__card-info-list-item">Ciepła woda</li>
+                        <li class="islands__card-info-list-item">Czyste plaże</li>
+                        <li class="islands__card-info-list-item">Ekskluzywny bar</li>
+                        <li class="islands__card-info-list-item">Wysokie palmy</li>
+                    </ul>
+                    <button class="islands__card-info-btn btn-special-animation">Wybierz</button>
+                </div>
+            </div>
+            <div class="islands__card" onclick="void(0)">
+                <div class="islands__card-img islands__card-img--third">
+                    <h3 class="islands__card-img-title">Wyspa Nobu</h3>
+                    <p class="islands__card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej
+                        informacji</p>
+                </div>
+                <div class="islands__card-info">
+                    <h3 class="islands__card-info-title">Wyspa Nobu</h3>
+                    <ul class="islands__card-info-list">
+                        <li class="islands__card-info-list-item">Piękna okolica</li>
+                        <li class="islands__card-info-list-item">Ciepła woda</li>
+                        <li class="islands__card-info-list-item">Czyste plaże</li>
+                        <li class="islands__card-info-list-item">Ekskluzywny bar</li>
+                        <li class="islands__card-info-list-item">Wysokie palmy</li>
+                    </ul>
+                    <button class="islands__card-info-btn btn-special-animation">Wybierz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- contact start
+   -->
+    <section id="contact" class="contact section-padding section white-section">
+
+        <div class="white-block white-block-left"></div>
+        <div class="white-block white-block-right"></div>
+
+        <h2 class="section-heading">Kontakt</h2>
+
+        <div class="wrapper">
+
+            <form class="contact__form">
+
+                <div class="contact__form-top">
+                    <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                    <input type="text" class="contact__form-input" id="name">
+
+                    <label for="email" class="contact__form-label">Adres e-mail:</label>
+                    <input type="text" id="email" class="contact__form-input">
+                </div>
+
+                <label for="msg" class="contact__form-label">Wiadomość:</label>
+                <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+
+            </form>
+        </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- Footer Start -->
+     <footer class="footer section-padding">
+        <div class="wrapper">
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <p class="footer__copyright">Copyright &copy; 2021. All rights reserved.</p>
+        </div>
+    </footer>
+<!-- srypty uzyte -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
