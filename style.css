@@ -1,0 +1,209 @@
+/* ==== Zmienne kolorów i czcionek ==== */
+:root {
+    --main-color: #3498db;
+    --accent-color: #2ecc71;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --white-color: #ffffff;
+
+    /* Bazowy rozmiar czcionki */
+    --base-font-size: 16px;
+}
+
+html {
+    font-size: 100%; /* 1rem = 16px */
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 90%; /* 1rem = 14.4px */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 80%; /* 1rem = 12.8px */
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem; /* 16px */
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
+}
+
+/* ==== Nagłówek ==== */
+header {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 2rem 0; /* 32px 0 */
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* 40px */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem; /* 19.2px */
+    margin-top: 0.5rem; /* 8px */
+}
+
+/* ==== Nawigacja ==== */
+.navbar {
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px */
+    padding: 1rem 2rem; /* 16px 32px */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem; /* 24px */
+}
+
+.nav-link {
+    color: var(--dark-color);
+    font-size: 1rem; /* 16px */
+    margin-left: 1rem; /* 16px */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    color: var(--accent-color);
+}
+
+/* ==== Sekcje strony ==== */
+section {
+    padding: 4rem 2rem; /* 64px 32px */
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; /* 32px */
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+section p {
+    font-size: 1rem; /* 16px */
+}
+
+/* ==== Stopka ==== */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0; /* 24px 0 */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem; /* 14.4px */
+}
+
+/* ==== Przyciski ==== */
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    font-size: 1rem; /* 16px */
+    border: none;
+    border-radius: 0.5rem; /* 8px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* ==== Obrazy ==== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* ==== Responsywność dla sekcji ==== */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1.5rem; /* 48px 24px */
+    }
+
+    section h2 {
+        font-size: 1.8rem; /* 28.8px */
+    }
+
+    section p {
+        font-size: 0.9rem; /* 14.4px */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 2rem 1rem; /* 32px 16px */
+    }
+
+    section h2 {
+        font-size: 1.6rem; /* 25.6px */
+    }
+
+    section p {
+        font-size: 0.8rem; /* 12.8px */
+    }
+}
+
+#top-header {
+    padding: 2rem 1rem; /* Dodanie odstępów wokół sekcji */
+    background-color: #f8f9fa; /* Kolor tła sekcji */
+}
+
+.profile-image {
+    width: 100%; /* Dopasowanie szerokości do kontenera */
+    max-width: 200px; /* Zmniejszenie rozmiaru zdjęcia */
+    height: auto; /* Zachowanie proporcji */
+    border-radius: 15px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtelny cień wokół zdjęcia */
+}
+
+h1 {
+    font-size: 2rem; /* Zwiększenie rozmiaru czcionki */
+    color: #34495e; /* Kolor nagłówka */
+    margin-top: 1rem; /* Odstęp od zdjęcia */
+}
+
+p {
+    font-size: 1.2rem; /* Rozmiar czcionki opisu */
+    color: #7f8c8d; /* Kolor tekstu */
+    margin-top: 0.5rem; /* Odstęp od nagłówka */
+}
+
+.container {
+    max-width: 1200px; /* Maksymalna szerokość kontenera */
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Wyśrodkowanie zawartości w pionie */
+}
